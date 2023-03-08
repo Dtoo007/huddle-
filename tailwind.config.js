@@ -9,7 +9,15 @@ module.exports = {
       xl: '1440px'
     },
     
-
+    container: {
+      center: (true),
+      padding: {
+        md:'8rem',
+      sm: '0rem',
+      lg: '4rem',
+      xl: '5rem',
+    },
+ },
 
     extend: {
       colors: {
