@@ -626,6 +626,10 @@ video {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -716,10 +720,6 @@ video {
   background-image: url('../images/bg-hero-mobile.svg');
 }
 
-.bg-\[url\(\'\.\.\/images\/bg-hero-desktop\.svg\'\)\] {
-  background-image: url('../images/bg-hero-desktop.svg');
-}
-
 .p-6 {
   padding: 1.5rem;
 }
@@ -773,6 +773,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -907,6 +911,10 @@ video {
     width: auto;
   }
 
+  .md\:w-1 {
+    width: 0.25rem;
+  }
+
   .md\:max-w-md {
     max-width: 28rem;
   }
@@ -947,12 +955,12 @@ video {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .md\:bg-none {
-    background-image: none;
-  }
-
   .md\:bg-\[url\(\'\.\.\/images\/bg-hero-desktop\.svg\'\)\] {
     background-image: url('../images/bg-hero-desktop.svg');
+  }
+
+  .md\:bg-none {
+    background-image: none;
   }
 
   .md\:px-6 {
