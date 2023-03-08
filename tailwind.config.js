@@ -32,8 +32,8 @@ module.exports = {
 
       theme: {
         backgroundImage: {
-          'hero_right': "url('/images/bg-hero-desktop.svg')",
-          'hero_left': "url('images.logo.svg')",
+          // 'hero_right': "url('/images/bg-hero-desktop.svg')",
+          // 'hero_left': "url('images.logo.svg')",
         },
       }
 
