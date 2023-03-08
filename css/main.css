@@ -562,16 +562,20 @@ video {
   margin-bottom: -3.5rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-16 {
   margin-bottom: 4rem;
 }
 
-.mb-24 {
-  margin-bottom: 6rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .block {
@@ -602,12 +606,16 @@ video {
   width: 0.25rem;
 }
 
+.w-1\/4 {
+  width: 25%;
+}
+
 .w-2 {
   width: 0.5rem;
 }
 
-.w-3 {
-  width: 0.75rem;
+.w-2\/4 {
+  width: 50%;
 }
 
 .max-w-lg {
@@ -616,10 +624,6 @@ video {
 
 .max-w-sm {
   max-width: 24rem;
-}
-
-.max-w-xl {
-  max-width: 36rem;
 }
 
 .flex-row {
@@ -728,16 +732,16 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\.\/images\/bg-hero-desktop\.svg\'\)\] {
+  background-image: url('../images/bg-hero-desktop.svg');
+}
+
 .p-6 {
   padding: 1.5rem;
 }
 
 .p-7 {
   padding: 1.75rem;
-}
-
-.p-12 {
-  padding: 3rem;
 }
 
 .px-2 {
@@ -775,6 +779,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -785,6 +794,14 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .text-center {
@@ -801,40 +818,12 @@ video {
   line-height: 1.25rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .font-medium {
   font-weight: 500;
 }
 
-.font-normal {
-  font-weight: 400;
-}
-
 .font-semibold {
   font-weight: 600;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .text-black {
@@ -902,7 +891,13 @@ video {
 }
 
 .hover\:bg-off_white:hover {
-  background-color: rgba(247, 247, 247, 0.7);;
+  --tw-bg-opacity: 1;
+  background-color: rgb(200 242 253 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-hover:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 155 219 / var(--tw-bg-opacity));
 }
 
 .hover\:text-off_arch:hover {
@@ -939,6 +934,14 @@ video {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-2 {
+    width: 0.5rem;
+  }
+
+  .md\:w-1 {
+    width: 0.25rem;
   }
 
   .md\:max-w-md {
@@ -1001,11 +1004,6 @@ video {
 
   .md\:text-center {
     text-align: center;
-  }
-
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .md\:text-6xl {

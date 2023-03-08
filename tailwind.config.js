@@ -8,6 +8,8 @@ module.exports = {
       lg: '976px',
       xl: '1440px'
     },
+
+
     extend: {
       colors: {
         black: '#000000',
@@ -21,11 +23,20 @@ module.exports = {
         silver: '#ecebff',
         bubble_gum: '#ff77e9',
         bermuda: '#78dcca',
-        off_white: 'rgba(247, 247, 247, 0.7);',
+        off_white: '#C8F2FD',
         off_arch: '#B7B7B7',
         pink: '#FF52BF',
         cyan: '#00252E',
+        hover: '#FF9BDB',
+      },
+
+      theme: {
+        backgroundImage: {
+          'hero_right': "url('/images/bg-hero-desktop.svg')",
+          'hero_left': "url('images.logo.svg')",
+        },
       }
+
     },
   },
   plugins: [],

@@ -8,116 +8,122 @@
 	<title>Manage Landing Page</title>
 </head>
 <body>
-    <header class="bg-white">
-                    <!--Nav bar-->
-        <nav class=" container mx-auto w-92% text:sm pt-4 pb-4">
-            <!--Flex container-->
-            <div class="flex items-center justify-between">
-                <!--logo-->
-                <div class="pt-0">
-                    <img src="images\logo.svg" alt="black color huddle logo in text format 'Huddle'">
+    <div class="bg-[url('../images/bg-hero-desktop.svg')]">
+        <!--Hero_section-->
+            <header>
+                            <!--Nav bar-->
+                <nav class="container mx-auto w-92% text:sm pt-4 pb-4">
+                    <!--Flex container-->
+                    <div class="flex items-center justify-between">
+                        <!--logo-->
+                        <div class="pt-0">
+                            <img src="images\logo.svg" alt="black color huddle logo in text format 'Huddle'">
+                        </div>
+                        <!--Menu items-->
+                        <div id="menu" class="absolute min-h-[40vh] left-0  top-[9%] w-full flex items-center px-5 md:static md:min-h-fit md:w-auto md:bg-none">
+                            <ul id="menu-list" class="gap-4 hidden flex-col md:items-center md:flex-row md:gap-8 md:flex">
+                                <li><a href="#" class="hover:text-off_arch">Pricing</a></li>
+                                <li><a href="#"class="hover:text-off_arch">Product</a></li>
+                                <li><a href="#"class="hover:text-off_arch">About Us</a></li>
+                                <li><a href="#"class="hover:text-off_arch">Careers</a></li>
+                                <li><a href="#"class="hover:text-off_arch">Community</a></li>
+                            </ul>
+                        </div>
+                        <!--Button-->
+                        <div>
+                            <a href="#" class="bg-rgba(247, 247, 247, 0.7) shadow py-1 px-6 p rounded-full 
+                            border-black border-1.5 text-0.2xl hover:bg-off_white hidden md:flex">Try it free</a>
+                        </div>
+                        <!-- Hamburger icon-->
+                        <button id="menu-btn" 
+                            class="block hamburger  md:hidden focus:outline-none">
+                            <span class="hamburger-top"></span>
+                            <span class="hamburger-middle"></span>
+                            <span class="hamburger-bottom"></span>
+                        </button>
+                    </div>
+                </nav>
+            </header>
+
+        <!--Section-->
+        <section id="hero">
+            <!-- Flex container -->
+            <div class="container flex flex-col-reverse md:flex-row items-start justify-center px-2 mt-10 mx-auto space-y-0 md:px-6 md:space-y-0">
+                <!--Left Items-->
+                <div class="flex flex-col mb-10 space-y-12 md:w-1/2">
+                    <h1 class="max-w-lg text-4xl  font-semibold text-center md:text-left md:text-6xl">Build The Community Your Fans Will Love</h1>
+                    <p class="max-w-sm text-center text-black md:text-left">Huddle re-imagines the way we 
+                        build communities. You have a voice, but so does your audience. 
+                        Create connections with your users as you engage in genuine discussion.
+                    </p>
+                    <div class="flex justify-center md:justify-start">
+                            <button type="button" class="bg-pink font-medium text-white shadow py-1 px-6 md:px-6 rounded-full 
+                        text-0.2xl w-2/8 md:w-1/2 hover:bg-hover"> Get Started For Free
+                        </button>
+                    </div>     
                 </div>
-                <!--Menu items-->
-                <div id="menu" class="absolute min-h-[40vh] left-0  top-[9%] w-full flex items-center px-5 md:static md:min-h-fit md:w-auto md:bg-none">
-                    <ul id="menu-list" class="gap-4 hidden flex-col md:items-center md:flex-row md:gap-8 md:flex">
-                        <li><a href="#" class="hover:text-off_arch">Pricing</a></li>
-                        <li><a href="#"class="hover:text-off_arch">Product</a></li>
-                        <li><a href="#"class="hover:text-off_arch">About Us</a></li>
-                        <li><a href="#"class="hover:text-off_arch">Careers</a></li>
-                        <li><a href="#"class="hover:text-off_arch">Community</a></li>
-                    </ul>
+                <!--Right items_image-->
+                <div class=" flex items-center justify-center md:w-1/2">
+                    <img src="images\illustration-mockups 1.svg" alt="...">
                 </div>
-                <!--Button-->
-                <div>
-                    <a href="#" class="bg-rgba(247, 247, 247, 0.7) shadow py-1 px-6 p rounded-full 
-                    border-black border-1.5 text-0.2xl hover:bg-off_white hidden md:flex">Try it free</a>
-                </div>
-                <!-- Hamburger icon-->
-                <button id="menu-btn" 
-                    class="block hamburger  md:hidden focus:outline-none">
-                    <span class="hamburger-top"></span>
-                    <span class="hamburger-middle"></span>
-                    <span class="hamburger-bottom"></span>
-                </button>
             </div>
-        </nav>
-    </header>
-<!--Section-->
-<section id="hero">
-    <!-- Flex container -->
-    <div class="container flex flex-col-reverse md:flex-row items-start justify-center px-2 mt-10 mx-auto space-y-0 md:px-6 md:space-y-0">
-        <!--Left Items-->
-        <div class="flex flex-col mb-24 space-y-12 md:w-1/2">
-            <h1 class="max-w-lg text-4xl  font-semibold text-center md:text-left md:text-6xl">Build The Community Your Fans Will Love</h1>
-            <p class="max-w-sm text-center text-black md:text-left">Huddle re-imagines the way we 
-                build communities. You have a voice, but so does your audience. 
-                Create connections with your users as you engage in genuine discussion.
-            </p>
-                <div class="flex justify-center md:justify-start">
-                    <a href="#" class="bg-pink font-medium text-white shadow py-1 px-6 rounded-full 
-                    text-0.2xl md:w-1/1">Get Started For Free</a>
-                </div>
-                
-        </div>
-        <!--Right items_image-->
-        <div class=" flex items-center justify-center md:w-1/2">
-            <img src="images\illustration-mockups 1.svg" alt="...">
-        </div>
-    </div>
-</section>
-<!--features section-->
-<section id="features">
-    <!--Flex container_one-->
-    <div class="container flex flex-col-reverse md:items-center md:justify-center space-y-0 md:space-x-24 border mb-16 rounded-md 
-            shadow-2 p-7 justify-between mx-auto md:items-start md:14 md:flex-row">
-            <!--left content-->
-        <div class="container flex flex-col space-y-4">
-            <h4 class="font-semibold text-1xl font-semibold text-center md:text-left pt-4">Grow Together</h4>
-            <p class="text-center md:max-w-md md:text-left max-w-sm text-center text-black md:text-left">Generate meaningful discussions with your audience and build a 
-                strong, loyal community. Think of the insightful conversations 
-                you miss out on with a feedback form. 
-            </p>
-        </div>
-        <!--right content_image-->
-        <div>
-            <img src="images\illustration-flowing-conversation.svg" alt="">
-        </div>
+        </section>
     </div>
 
-    <!--Flex container_two-->
-    <div class="container flex flex-col-reverse md:items-center md:justify-center space-y-0 md:space-x-24 border mb-16 rounded-md 
-            shadow-2 p-7 justify-between mx-auto md:items-start md:flex-row">
-            <!--left content-->
-        <div class="container flex flex-col space-y-4">
-            <h4 class="font-semibold text-1xl 
-            font-semibold text-center md:text-left pt-4" >Flowing Conversations</h4>
-            <p class="text-center md:max-w-md md:text-left max-w-sm text-center text-black md:text-left">You wouldn't paginate a conversation in real life, so why do it online? Our threads 
-            have just-in-time loading for a more natural flow. 
-            </p>
+    <!--features section-->
+    <section id="features" class="mt-20">
+        <!--Flex container_one-->
+        <div class="container flex flex-col-reverse md:items-center md:justify-center space-y-0 md:space-x-24 border mb-16 rounded-md 
+                shadow-2 p-7 justify-between mx-auto md:items-start md:14 md:flex-row">
+                <!--left content-->
+            <div class="container flex flex-col space-y-4">
+                <h4 class="font-semibold text-1xl font-semibold text-center md:text-left pt-4">Grow Together</h4>
+                <p class="text-center md:max-w-md md:text-left max-w-sm text-center text-black md:text-left">Generate meaningful discussions with your audience and build a 
+                    strong, loyal community. Think of the insightful conversations 
+                    you miss out on with a feedback form. 
+                </p>
+            </div>
+            <!--right content_image-->
+            <div>
+                <img src="images\illustration-flowing-conversation.svg" alt="...">
+            </div>
         </div>
-        <!--right content_image-->
-        <div>
-            <img src="images\illustration-grow-together.svg" alt="...">
-        </div>
-    </div>
 
-    <!--Flex container_three-->
-    <div class="container flex flex-col-reverse  space-y-0 border mb-16 rounded-md 
-            shadow-2 p-7 justify-between mx-auto md:items-start md:space-x-24 md:items-center md:justify-center md:flex-row">
-            <!--left content-->
-        <div class="container flex flex-col space-y-4">
-            <h4 class="font-semibold text-1xl 
-            font-semibold text-center md:text-left pt-4" >Your Users</h4>
-            <p class="text-center md:max-w-md md:text-left max-w-sm text-center text-black md:text-left">It takes no time at all to integrate Huddle with your app's authentication solution. 
-            This means, once signed in to your app, your users can start chatting immediately. 
-            </p>
+        <!--Flex container_two-->
+        <div class="container flex flex-col-reverse md:items-center md:justify-center space-y-0 md:space-x-24 border mb-16 rounded-md 
+                shadow-2 p-7 justify-between mx-auto md:items-start md:flex-row">
+                <!--left content-->
+            <div class="container flex flex-col space-y-4">
+                <h4 class="font-semibold text-1xl 
+                font-semibold text-center md:text-left pt-4" >Flowing Conversations</h4>
+                <p class="text-center md:max-w-md md:text-left max-w-sm text-center text-black md:text-left">You wouldn't paginate a conversation in real life, so why do it online? Our threads 
+                have just-in-time loading for a more natural flow. 
+                </p>
+            </div>
+            <!--right content_image-->
+            <div>
+                <img src="images\illustration-grow-together.svg" alt="...">
+            </div>
         </div>
-        <!--right content_image-->
-        <div>
-            <img src="images\illustration-your-users.svg" alt="">
+
+        <!--Flex container_three-->
+        <div class="container flex flex-col-reverse  space-y-0 border mb-16 rounded-md 
+                shadow-2 p-7 justify-between mx-auto md:items-start md:space-x-24 md:items-center md:justify-center md:flex-row">
+                <!--left content-->
+            <div class="container flex flex-col space-y-4">
+                <h4 class="font-semibold text-1xl 
+                font-semibold text-center md:text-left pt-4" >Your Users</h4>
+                <p class="text-center md:max-w-md md:text-left max-w-sm text-center text-black md:text-left">It takes no time at all to integrate Huddle with your app's authentication solution. 
+                This means, once signed in to your app, your users can start chatting immediately. 
+                </p>
+            </div>
+            <!--right content_image-->
+            <div>
+                <img src="images\illustration-your-users.svg" alt="">
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+    
 <!--Call to action-->
 <section id="CTA">
     <!--CTA flex container-->
@@ -126,9 +132,8 @@
         <div class="flex flex-col items-center justify-between border rounded-md shadow mx-auto space-y-4 p-6 bg-white -mb-14 md:w-1/">
             <h4 class="font-semibold text-1xl 
             font-semibold text-center md:text-center" >Ready To Build Your Community?</h4>
-            <button class="">
-                <a href="#" class="bg-pink font-medium text-white shadow py-1 px-6 rounded-full 
-                text-0.2xl md:w-1/1">Get Started For Free</a>
+            <button type="button" class="bg-pink font-medium text-white shadow py-1 px-6 rounded-full 
+                text-0.2xl md:w-1/1 hover:bg-hover">Get Started For Free
             </button>
         </div>
     </div>
